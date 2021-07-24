@@ -1,0 +1,18 @@
+.search__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    background: url("https://cdn.pixabay.com/photo/2016/08/24/16/20/books-1617327_960_720.jpg") 0 0 / cover no-repeat;
+}
+
+.search__filter select {
+    margin: 20px;
+}
+
+@media (max-width: 450px) {
+    .search__filter select {
+        margin: 10px 10px;
+    }
+}

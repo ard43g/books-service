@@ -1,0 +1,81 @@
+.book__wrapper {
+    position: relative;
+    display: flex;
+    min-height: 350px;
+    padding: 10px;
+    margin: 5px;
+    align-items: center;
+}
+.book__image {
+    position: relative;
+    display: flex;
+    flex: 1 1 50%;
+    max-width: 500px;
+    max-height: 350px;
+    min-height: 350px;
+    overflow: hidden;
+    background-color: #f3f2f1;
+}
+.book__image img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    object-fit: contain;
+}
+
+.book__descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 50%;
+    min-height: 100%;
+    padding: 10px;
+}
+.book__title {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.book__subtitle {
+    font-size: 16px;
+}
+.book__categories {
+    min-height: 20px;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.book__authors {
+    margin: 20px 0 15px;
+}
+.book__date {
+    text-align: right;
+}
+
+.book__description {
+    min-height: 200px;
+    min-width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #f3f2f1;
+}
+
+.button__back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+
+    background-color: #000;
+}
+.button__back span {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .book__wrapper {
+        flex-direction: column;
+    }
+}

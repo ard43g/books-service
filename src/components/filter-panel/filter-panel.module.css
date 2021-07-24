@@ -1,0 +1,13 @@
+.filter__select {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    border: 3px solid #000;
+    border-radius: 20px;
+}
+
+@media (max-width: 450px) {
+    .filter__select {
+        display: block;
+    }
+}

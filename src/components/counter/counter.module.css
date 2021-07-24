@@ -1,0 +1,7 @@
+.counter {
+    text-align: center;
+    line-height: 28px;
+}
+.counter span {
+    font-weight: bold;
+}
