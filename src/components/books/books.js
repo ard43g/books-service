@@ -21,13 +21,13 @@ const Books = memo(({ items, setBookPage, currentPosition, setCurrentPosition, s
     if (items && items.length !== 0) {
         return (
             <div className={styles.books__wrapper}>
-                {items.map((i) => {
+                {items.map((i, index) => {
                     const authors =
                         i.volumeInfo.authors?.length > 1
                             ? i.volumeInfo.authors.reduce((acc, i) => `${acc}, ${i}`)
                             : i.volumeInfo.authors;
                     return (
-                        <div className={styles.book__wrapper} key={i.id}>
+                        <div className={styles.book__wrapper} key={index}>
                             <div className={styles.book__image}>
                                 <img
                                     src={i.volumeInfo.imageLinks?.smallThumbnail || ""}
@@ -41,7 +41,6 @@ const Books = memo(({ items, setBookPage, currentPosition, setCurrentPosition, s
                             </h2>
 
                             {authors && <div className={styles.book__authors}>{authors}</div>}
-                            <div>{i.id}</div>
                         </div>
                     );
                 })}
