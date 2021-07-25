@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import styles from "./book-page.module.css";
 
 const BookPage = ({ click, image, categories, title, subtitle, authors, date, descr }) => {
+    useEffect(() => {
+        window.scrollTo(0, 300);
+    }, []);
     return (
         <div className={styles.book__wrapper}>
             <button className={styles.button__back} onClick={() => click()}>

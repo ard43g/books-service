@@ -7,7 +7,7 @@ const Books = memo(({ items, setBookPage, currentPosition, setCurrentPosition, s
 
     useEffect(() => {
         if (currentPosition !== 0 && !activeBook) {
-            window.scrollTo(window.pageYOffset, currentPosition);
+            window.scrollTo(0, currentPosition);
             setLoading(false);
         }
     }, [currentPosition]);
